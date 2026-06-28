@@ -1,0 +1,18 @@
+set realname = "Guruprasad"
+set from = "guruprasad.here@gmail.com"
+set use_from = yes
+
+set sendmail = "/usr/bin/msmtp"
+
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set record = "+[Gmail]/Sent Mail"
+
+set imap_user = "guruprasad.here@gmail.com"
+set imap_pass = "ksro xuii jkur syfk"
+
+set smtp_url = "smtp://guruprasad.here@smtp.gmail.com:587/"
+set ssl_force_tls = yes
+
+set editor = "vim"
+set sort = reverse-date
