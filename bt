@@ -1,0 +1,11 @@
+#!/bin/bash
+# Connect to bluetooth device using bluetoothctl
+
+DEVICE="8C:8E:40:C0:AF:00"
+
+sudo service bluetooth start
+
+bluetoothctl power on
+bluetoothctl agent on
+bluetoothctl default-agent
+bluetoothctl connect $DEVICE

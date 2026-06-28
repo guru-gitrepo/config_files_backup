@@ -1,0 +1,9 @@
+#!/bin/bash
+# Connect to bluetooth device using bluetoothctl
+#!/bin/bash
+
+DEVICE="8C:8E:40:C0:AF:00"
+
+sudo service bluetooth start
+
+bluetoothctl disconnect $DEVICE
