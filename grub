@@ -1,0 +1,42 @@
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR=`( . /etc/os-release && echo ${NAME} )`
+GRUB_CMDLINE_LINUX_DEFAULT="quiet selinux=0"
+GRUB_CMDLINE_LINUX=""
+GRUB_COLOR_NORMAL="white/black"
+GRUB_COLOR_HIGHLIGHT="black/light-gray"
+GRUB_DISABLE_OS_PROBER=false
+GRUB_TERMINAL=console
+GRUB_DISABLE_ADDITIONAL_ANTIX_ENTRIES="true"
+GRUB_GFXMODE=1024x768
+
+#if [ -e /usr/lib/init-diversity ] || [ -e /lib/init-diversity ] ; then
+#	GRUB_DEFAULT=saved
+#	GRUB_SAVEDEFAULT=true
+#	GRUB_DISABLE_SUBMENU=n
+#fi
+
+#if [ -e /etc/init-diversity/grub_hide_cmdline_inits ] ; then
+#	GRUB_DEFAULT=0
+#	GRUB_SAVEDEFAULT=false
+#	GRUB_DISABLE_SUBMENU=n
+#fi
+
+## antiX-MX conditions
+
+#if [ -f /etc/lsb-release ]; then
+#	GRUB_DISTRIBUTOR=`grep PRETTY_NAME /etc/lsb-release | cut -d= -f2 | cut -d\" -f2 2> /dev/null || echo Debian`
+#fi
+
+#if [ -f /usr/share/wallpaper/grub/back.png ]; then
+#	GRUB_BACKGROUND=/usr/share/wallpaper/grub/back.png 
+#fi
+
+#if [ -e /boot/grub/themes/mx_linux/ ]; then
+#	GRUB_THEME="/boot/grub/themes/mx_linux/theme.txt"
+#fi
+
+#if [ -e /etc/default/grub.mx-defaults ]; then
+#     .  /etc/default/grub.mx-defaults
+#fi
