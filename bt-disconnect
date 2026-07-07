@@ -1,0 +1,10 @@
+#!/bin/sh
+
+bluetoothctl <<EOF
+disconnect F4:4E:FC:78:57:22
+power off
+quit
+EOF
+
+service bluetooth stop
+pulseaudio --kill

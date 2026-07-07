@@ -8,3 +8,5 @@ source ~/.aliases
 export PS1="\w $:"
 export EDITOR=vim
 export PDK_ROOT="/usr/local/share/pdk"
+export PATH="$HOME/.local/bin:$PATH"
+

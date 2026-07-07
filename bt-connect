@@ -1,0 +1,15 @@
+#!/bin/sh
+
+pulseaudio --check || pulseaudio --start
+
+sudo service bluetooth start
+sleep 1
+
+bluetoothctl <<EOF
+power on
+agent on
+default-agent
+connect F4:4E:FC:78:57:22
+quit
+EOF
+
