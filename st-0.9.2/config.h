@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "JetBrains Mono:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -29,7 +29,7 @@ char *vtiden = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
 static float cwscale = 1.0;
-static float chscale = 1.0;
+static float chscale = 1.15;
 
 /*
  * word delimiter string
@@ -116,7 +116,6 @@ static const char *colorname[] = {
 	"magenta",
 	"cyan",
 	"white",
-
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
